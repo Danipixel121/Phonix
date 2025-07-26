@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phonix</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="shortcut icon" href="../img/icon2.png" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../img/icon.png" alt="Logo de la marca" />
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../servicios/index.html">Servicios</a></li>
+        <li><a href="../productos/index.html">Productos</a></li>
+        <a class="btn" href="index.html"><button>Contacto</button></a>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <section
+    style="align-items: center; text-align: center; margin: 1rem"
+    id="productos"
+    class="productos"
+  >
+    <h1 style="text-align: center" >Contáctanos</h1>
+    <p style="text-align: left">
+      Nos encontramos en una ubicación estratégica en el centro de Tui, en la
+      calle A Guarda, nº 4, a pocos pasos de las principales vías comerciales
+      de la ciudad. Nuestra tienda está perfectamente conectada, y se puede
+      acceder fácilmente tanto a pie como en vehículo. Además, la zona cuenta
+      con aparcamiento cercano y un entorno tranquilo que hace más cómoda tu
+      visita.
+    </p>
+  </section>
+
+  <div style="display: flex; margin: 2rem" class="box">
+    <div class="tienesdudas">
+      <h1 style="font-size: 2rem; text-align: center">¿Tienes Dudas?</h1>
+      <p style="text-align: left; margin: 1rem">
+        ¡Bienvenido a Phonix Tui! Somos tu tienda de confianza en telefonía móvil:
+        Especialistas en iPhones, reparación de todo tipo de móviles y venta de
+        accesorios originales. Estamos aquí para ayudarte con atención
+        personalizada y un servicio técnico profesional. ¿Tienes alguna consulta?
+        ¡Contáctanos y te asesoraremos encantados!
+        <br /><br />📧 info@phonix.es <br /><br />
+        📞 <a href="tel:986173031">986 173 031</a><br /><br />
+        📱 633 138 643 (WhatsApp)
+        <br /><br />🕒 Lunes a Jueves: <br /> 10:30 - 13:30 | 17:00 - 20:00
+        <br /><br />🕒 Viernes:<br /> 10:30 - 14:00
+        <br /><br />🕒 Horario Verano (1 Julio a 31 Agosto):<br /> 10:00 - 14:30
+        <br /><br />📍 Calle A Guarda, 4 - 36700 Tui, Pontevedra
+      </p>
+    </div>
+
+    <div style="margin-top: 2rem" class="maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2742.7163964650736!2d-8.647995824344337!3d42.05182775451993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd259b87ecf69389%3A0x239f9f3f020d77ba!2sPhonix!5e1!3m2!1ses!2ses!4v1752864456566!5m2!1ses!2ses"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        width="400"
+        height="300"
+      ></iframe>
+    </div>
+  </div>
+
+  <style>
+    h1 {
+      font-size: 2.5rem;
+      margin: 1rem;
+    }
+
+    .responsive-img {
+      width: 50rem;
+      border-radius: 15px;
+      margin-top: 2rem;
+      max-width: 100%;
+      /* Asegura que no desborde en pantallas pequeñas */
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .responsive-img {
+        width: 20rem;
+      }
+    }
+  </style>
+
+  <section id="contacto" class="contacto-section">
+    <h2>Contáctanos</h2>
+    <div class="contacto-icons">
+      <a href="https://wa.me/34633138643" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/phonixtui" target="_blank"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a href="https://www.facebook.com/phonixtui" target="_blank"
+        ><i class="fab fa-facebook"></i
+      ></a>
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=info@phonix.es"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </section>
+</body>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</html>

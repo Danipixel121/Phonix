@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonix</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="shortcut icon" href="../img/icon2.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../img/icon.png" alt="Logo de la marca" />
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../servicios/index.html">Servicios</a></li>
+        <li><a href="index.html">Productos</a></li>
+        <a class="btn" href="../contacto/index.html"><button>Contacto</button></a>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <div style="display:flex; margin: 1rem;" class="box">
+    <div class="tienesdudas" style="display: flex; flex-direction: column; align-items: center;">
+      <h1 style="font-size: 2rem; text-align: center;">Móviles</h1>
+      <div style="background-color: rgba(0, 0, 0, 1); border-radius: 15px;">
+        <a href="moviles.html">
+          <img class="imagen-boton" style="width: 20rem; margin-top: 1rem;" src="../img/movil.png" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="tienesdudas" style="display: flex; flex-direction: column; align-items: center;">
+      <h1 style="font-size: 2rem; text-align: center;">Accesorios</h1>
+      <div style="background-color: rgba(0, 0, 0, 1); border-radius: 15px;">
+        <a href="accesorios.html">
+        <img class="imagen-boton" style="width: 20rem; margin-top: 1rem;" src="../img/accesorio.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <style>
+      .imagen-boton:hover {
+    transform: scale(1.2);
+  }
+
+h1 {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+
+.responsive-img {
+  width: 50rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .responsive-img {
+    width: 100%;
+    max-width: 20rem;
+    margin: 2rem auto 0 auto; /* Centra la imagen y da margen superior */
+    padding: 0 1rem; /* Margen a los lados */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+  }
+
+}
+
+  </style>
+
+  <section id="contacto" class="contacto-section">
+    <h2>Contáctanos</h2>
+    <div class="contacto-icons">
+      <a href="https://wa.me/34633138643" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/phonixtui" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/phonixtui" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@phonix.es" target="_blank" rel="noopener">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </section>
+
+</body>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Phonix es tu tienda de confianza para la venta y reparación de móviles, especialmente iPhones, y accesorios. Servicio rápido, profesional y con garantía.">
+  <title>Phonix</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="img/icon2.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/icon.png" alt="Logo de la marca" />
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="servicios/index.html">Servicios</a></li>
+        <li><a href="productos/index.html">Productos</a></li>
+        <li><a class="btn" href="contacto/index.html"><button>Contacto</button></a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <section id="inicio" class="inicio-section">
+    <div class="inicio-content">
+      <h1>Venta Mayorista de Telefonía Móvil</h1>
+      <p>
+        Especialistas en iPhone, móviles usados y seminuevos.<br>
+        Servicio técnico integral y venta de accesorios originales.<br>
+        Envíos a España y Portugal. Plazo de entrega: 3-5 días hábiles.
+      </p>
+    </div>
+    <div class="inicio-image">
+      <img src="img/3.webp" alt="Tienda de telefonía móvil y accesorios" />
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto-section">
+    <h2>Contáctanos</h2>
+    <div class="contacto-icons">
+      <a href="https://wa.me/34633138643" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/phonixtui" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/phonixtui" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@phonix.es" target="_blank" rel="noopener">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+
+</html>
